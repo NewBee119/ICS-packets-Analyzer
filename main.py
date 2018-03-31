@@ -264,42 +264,31 @@ def main():
                 
 
                 if ip.len == length:
-                    if counts%6 == 0 and counts < 6:
+                    if counts%4 == 0 and counts < 4:
                         print >>fout, ">>%s,  %f" % (tcp.data.encode('hex'), ts)
                         tmp1 = ts
-                    if counts%6 == 1 and counts < 6:
+                    if counts%4 == 1 and counts < 4:
                         print >>fout, ">>%s,  %f" % (tcp.data.encode('hex'), ts)
                         tmp2 = ts
-                    if counts%6 == 2 and counts < 6:
+                    if counts%4 == 2 and counts < 4:
                         print >>fout, ">>%s,  %f" % (tcp.data.encode('hex'), ts)
                         tmp3 = ts
-                    if counts%6 == 3 and counts < 6:
+                    if counts%4 == 3 and counts < 4:
                         print >>fout, ">>%s,  %f" % (tcp.data.encode('hex'), ts)
                         tmp4 = ts
-                    if counts%6 == 4 and counts < 6:
-                        print >>fout, ">>%s,  %f" % (tcp.data.encode('hex'), ts)
-                        tmp5 = ts
-                    if counts%6 == 5 and counts < 6:
-                        print >>fout, ">>%s,  %f" % (tcp.data.encode('hex'), ts)
-                        tmp6 = ts
-                    if counts%6 == 0 and counts >= 6:
+                    
+                    if counts%4 == 0 and counts >= 4:
                         print >>fout, ">>%s,  %f,  %f" % (tcp.data.encode('hex'), ts, (ts-tmp1))
                         tmp1 = ts
-                    if counts%6 == 1 and counts > 6:
+                    if counts%4 == 1 and counts > 4:
                         print >>fout, ">>%s,  %f,  %f" % (tcp.data.encode('hex'), ts, (ts-tmp2))
                         tmp2 = ts
-                    if counts%6 == 2 and counts > 6:
+                    if counts%4 == 2 and counts > 4:
                         print >>fout, ">>%s,  %f,  %f" % (tcp.data.encode('hex'), ts, (ts-tmp3))
                         tmp3 = ts
-                    if counts%6 == 3 and counts > 6:
+                    if counts%4 == 3 and counts > 4:
                         print >>fout, ">>%s,  %f,  %f" % (tcp.data.encode('hex'), ts, (ts-tmp4))
                         tmp4 = ts
-                    if counts%6 == 4 and counts > 6:
-                        print >>fout, ">>%s,  %f,  %f" % (tcp.data.encode('hex'), ts, (ts-tmp5))
-                        tmp5 = ts
-                    if counts%6 == 5 and counts > 6:
-                        print >>fout, ">>%s,  %f,  %f" % (tcp.data.encode('hex'), ts, (ts-tmp6))
-                        tmp6 = ts
                     
                     counts = counts + 1
                     pcw.writepkt(eth,ts)
