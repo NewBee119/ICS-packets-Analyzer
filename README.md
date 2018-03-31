@@ -7,16 +7,16 @@ test platform: ubuntu 16.04 64bit
 
 ###Usage
 help infor:  
-![Image test](https://github.com/scu-igroup/ICS-packets-Analyzer/image/help.png)  
+![Image test](https://github.com/scu-igroup/ICS-packets-Analyzer/blob/master/image/help.png)  
   
 view 4-tuple flow info:  
-![Image test](https://github.com/scu-igroup/ICS-packets-Analyzer/image/4-tuple.png)  
+![Image test](https://github.com/scu-igroup/ICS-packets-Analyzer/blob/master/image/4-tuple.png)  
   
 save into pcap:  
-![Image test](https://github.com/scu-igroup/ICS-packets-Analyzer/image/savetopcap.png)  
+![Image test](https://github.com/scu-igroup/ICS-packets-Analyzer/blob/master/image/savetopcap.png)  
   
 flow info with a fixed length:  
-![Image test](https://github.com/scu-igroup/ICS-packets-Analyzer/image/lengthflowinfo.png)  
+![Image test](https://github.com/scu-igroup/ICS-packets-Analyzer/blob/master/image/lengthflowinfo.png)  
   
 
 
