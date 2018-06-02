@@ -22,6 +22,8 @@ python main.py -f --pcapfile=./train.pcap --outputfile=./102.pcap --srcip=192.16
 python main.py -i --pcapfile=./102.pcap    
 head -20 ./out_77.txt
 ![Image test](https://github.com/scu-igroup/ICS-packets-Analyzer/blob/master/image/lengthflowinfo.png)  
-  
+
+注意：  
+对pcap包有两种格式，分别用pcap和pcapng两种方式解析。如果代码报错不能解析pcap包，需对照着源码更改...  
 
 
